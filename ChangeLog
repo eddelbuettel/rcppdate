@@ -1,0 +1,8 @@
+2020-03-15  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Initial version
+
+	* inst/include/*: 'date' C++ header library by Howard Hinnant
+
+	* inst/examples/year_month_date.cpp: Simple example for the
+	year_month_day type
