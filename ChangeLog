@@ -1,3 +1,11 @@
+2020-03-16  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Added two badges, added short example
+
+	* inst/examples/iso_week.cpp: Simple example for ISO week support
+
+	* .travis.yml: Added to support continuous integration
+
 2020-03-15  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Version, Date): Initial version
