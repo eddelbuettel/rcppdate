@@ -9,8 +9,10 @@
 \section{Maintainer}{\packageMaintainer{RcppDate}}
 \keyword{package}
 \examples{
-  if (requireNamespace("Rcpp", quietly=TRUE)) {
-    ## see the source file in the examples/ directory of the package
+## see the source files in the examples/ directory of the package
+## check for (optional, only in Suggests:) Rcpp, and ensure we are
+## but not on Windows as this runs up to the ten second time limit
+if (requireNamespace("Rcpp", quietly=TRUE) && (.Platform$OS.type != "windows")) {
     Rcpp::sourceCpp(system.file("examples", "year_month_day.cpp", package="RcppDate"))
-  }
+}
 }

@@ -1,3 +1,7 @@
+2020-03-17  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Date, Version): Initial CRAN release 0.0.1
+
 2020-03-16  Dirk Eddelbuettel  <edd@debian.org>
 
 	* README.md: Added two badges, added short example
