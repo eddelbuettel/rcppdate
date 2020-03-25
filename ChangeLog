@@ -1,3 +1,9 @@
+2020-03-24  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Badges for CRAN version, dependencies and last commit
+
+	* inst/NEWS.Rd: Added
+
 2020-03-17  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Date, Version): Initial CRAN release 0.0.1
