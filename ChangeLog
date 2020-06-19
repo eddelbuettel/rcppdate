@@ -1,3 +1,8 @@
+2020-06-19  Dirk Eddelbuettel  <edd@debian.org>
+
+	* .travis.yml: Determine package name and version from DESCRIPTION,
+	switch to bionic
+
 2020-03-24  Dirk Eddelbuettel  <edd@debian.org>
 
 	* README.md: Badges for CRAN version, dependencies and last commit
