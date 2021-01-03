@@ -1,3 +1,7 @@
+2021-01-03  Dirk Eddelbuettel  <edd@debian.org>
+
+        * .github/workflows/ci.yaml: Add CI runner using r-ci
+
 2020-06-19  Dirk Eddelbuettel  <edd@debian.org>
 
 	* .travis.yml: Determine package name and version from DESCRIPTION,
