@@ -2,6 +2,7 @@
 ## RcppDate: date C++ header library for R
 
 [![Build Status](https://travis-ci.org/eddelbuettel/rcppdate.svg)](https://travis-ci.org/eddelbuettel/rcppdate)
+[![CI](https://github.com/eddelbuettel/rcppdate/workflows/ci/badge.svg)](https://github.com/eddelbuettel/rcppdate/actions?query=workflow%3Aci)
 [![License](https://eddelbuettel.github.io/badges/GPL2+.svg)](http://www.gnu.org/licenses/gpl-2.0.html)
 [![CRAN](http://www.r-pkg.org/badges/version/RcppDate)](https://cran.r-project.org/package=RcppDate)
 [![Dependencies](https://tinyverse.netlify.com/badge/RcppDate)](https://cran.r-project.org/package=RcppDate)
