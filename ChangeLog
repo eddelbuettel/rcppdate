@@ -1,4 +1,15 @@
+2021-01-29  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/include/date.h: Another upstream commit since 0.3.0
+
 2021-01-03  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/include/date.h: Upstream 0.3.0 plus more recent commits
+	* inst/include/julian.h: Ditto
+	* inst/include/ptz.h: Ditto
+	* inst/include/solar_hijri.h: Ditto
+	* inst/include/tz_private.h: Ditto
+	* inst/include/tz.h: Ditto
 
         * .github/workflows/ci.yaml: Add CI runner using r-ci
 	* README.md: Add new badge
