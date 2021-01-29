@@ -6,6 +6,7 @@
 [![License](https://eddelbuettel.github.io/badges/GPL2+.svg)](http://www.gnu.org/licenses/gpl-2.0.html)
 [![CRAN](http://www.r-pkg.org/badges/version/RcppDate)](https://cran.r-project.org/package=RcppDate)
 [![Dependencies](https://tinyverse.netlify.com/badge/RcppDate)](https://cran.r-project.org/package=RcppDate)
+[![Downloads](https://cranlogs.r-pkg.org/badges/RcppDate?color=brightgreen)](https://www.r-pkg.org/pkg/RcppDate)
 [![Last Commit](https://img.shields.io/github/last-commit/eddelbuettel/rcppdate)](https://github.com/eddelbuettel/rcppdate)
 
 ### About

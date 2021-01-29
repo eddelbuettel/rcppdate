@@ -2,6 +2,8 @@
 
 	* inst/include/date.h: Another upstream commit since 0.3.0
 
+	* README.md: Badges for downloads
+
 2021-01-03  Dirk Eddelbuettel  <edd@debian.org>
 
 	* inst/include/date.h: Upstream 0.3.0 plus more recent commits
