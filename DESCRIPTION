@@ -17,5 +17,5 @@ Description: A header-only C++ library is provided with support
  needed. 
 License: GPL (>= 2)
 Suggests: Rcpp
-URL: https://github.com/eddelbuettel/rcppdate
+URL: https://github.com/eddelbuettel/rcppdate, https://github.com/eddelbuettel/rcppdate
 BugReports: https://github.com/eddelbuettel/rcppdate/issues
