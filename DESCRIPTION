@@ -1,8 +1,8 @@
 Package: RcppDate
 Type: Package
 Title: 'date' C++ Header Library for Date and Time Functionality
-Version: 0.0.2
-Date: 2021-01-29
+Version: 0.0.3
+Date: 2021-05-19
 Author: Dirk Eddelbuettel
 Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Description: A header-only C++ library is provided with support

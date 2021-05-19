@@ -1,3 +1,12 @@
+2021-05-19  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Date, Version): Release 0.0.3
+
+2021-05-18  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/include/date.h: Upstream 3.0.1
+	* inst/include/ptz.h: Ditto
+
 2021-04-25  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (URL): Add repo
@@ -7,13 +16,13 @@
 	* DESCRIPTION (Date, Version): Release 0.0.2
 	(Description): Slightly reworded
 
-	* inst/include/date.h: Another upstream commit since 0.3.0
+	* inst/include/date.h: Another upstream commit since 3.0.0
 
 	* README.md: Added badge for downloads
 
 2021-01-03  Dirk Eddelbuettel  <edd@debian.org>
 
-	* inst/include/date.h: Upstream 0.3.0 plus more recent commits
+	* inst/include/date.h: Upstream 3.0.0 plus more recent commits
 	* inst/include/julian.h: Ditto
 	* inst/include/ptz.h: Ditto
 	* inst/include/solar_hijri.h: Ditto
