@@ -1,3 +1,16 @@
+2023-05-20  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll micro version and date
+
+	* inst/include/date.h: Sync with upstream
+	* inst/include/date.h: Idem
+	* inst/include/ios.h: Idem
+	* inst/include/iso_week.h: Idem
+	* inst/include/julian.h: Idem
+	* inst/include/ptz.h: Idem
+	* inst/include/solar_hijri.h: Idem
+	* inst/include/tz.h: Idem
+
 2022-11-10  Dirk Eddelbuettel  <edd@debian.org>
 
 	* .github/workflows/ci.yaml (jobs): Update to actions/checkout@v3
