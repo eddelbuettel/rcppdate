@@ -1,6 +1,17 @@
+2024-09-25  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Switch http to https for r-pkg.org badge
+
 2024-09-12  Dirk Eddelbuettel  <edd@debian.org>
 
 	* DESCRIPTION (Authors@R): Added
+
+2024-05-24  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/include/date.h: Sync with upstream
+	* inst/include/ptz.h: Idem
+	* inst/include/tz.h: Idem
+	* inst/include/tz_private.h: Idem
 
 2024-05-21  Dirk Eddelbuettel  <edd@debian.org>
 
@@ -16,7 +27,6 @@
 	* DESCRIPTION (Version, Date): Roll micro version and date
 
 	* inst/include/date.h: Sync with upstream
-	* inst/include/date.h: Idem
 	* inst/include/ios.h: Idem
 	* inst/include/iso_week.h: Idem
 	* inst/include/julian.h: Idem

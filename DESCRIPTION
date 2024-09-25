@@ -5,7 +5,7 @@ Version: 0.0.3.1
 Date: 2023-05-20
 Authors@R: c(person("Dirk", "Eddelbuettel", role = c("aut", "cre"), email = "edd@debian.org",
                     comment = c(ORCID = "0000-0001-6419-907X")),
-              person("Howard", "Hinnant", role = "aut", comment = "author of 'date' library"))
+             person("Howard", "Hinnant", role = "aut", comment = "author of 'date' library"))
 Description: A header-only C++ library is provided with support
  for dates, time zones, ISO weeks, Julian dates, and Islamic dates.
  'date' offers extensive date and time functionality for the C++11,
