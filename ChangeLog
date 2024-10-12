@@ -1,3 +1,9 @@
+2024-10-12  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll micro version and date
+
+	* inst/include/tz.h: Sync with upstream release 3.0.2
+
 2024-09-25  Dirk Eddelbuettel  <edd@debian.org>
 
 	* README.md: Switch http to https for r-pkg.org badge
