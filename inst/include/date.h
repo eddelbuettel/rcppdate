@@ -6529,7 +6529,7 @@ read(std::basic_istream<CharT, Traits>& is, int a0, Args&& ...args)
         } while (u > 0);
 #if defined(__GNUC__) && __GNUC__ >= 11
 #pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wstringop-overflow"
+// #pragma GCC diagnostic ignored "-Wstringop-overflow"
 #endif
         std::reverse(buf, e);
 #if defined(__GNUC__) && __GNUC__ >= 11
