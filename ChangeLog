@@ -1,3 +1,8 @@
+2025-05-28  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/include/date.h: Sync with upstream release 3.0.4
+	* inst/include/ptx.h: Idem
+
 2025-03-17  Dirk Eddelbuettel  <edd@debian.org>
 
 	* .github/workflows/ci.yaml: Switch to r-ci with implicit bootstrap
