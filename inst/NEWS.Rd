@@ -3,6 +3,12 @@
 \newcommand{\ghpr}{\href{https://github.com/eddelbuettel/rcppdate/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/eddelbuettel/rcppdate/issues/#1}{##1}}
 
+\section{Changes in version 0.0.6 (2025-05-29)}{
+  \itemize{
+    \item Updated to upstream version 3.0.4
+  }
+}
+
 \section{Changes in version 0.0.5 (2025-03-06)}{
   \itemize{
     \item Updated to upstream version 3.0.3

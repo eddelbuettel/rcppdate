@@ -1,7 +1,14 @@
+2025-05-29  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Date, Version): Release 0.0.6
+
 2025-05-28  Dirk Eddelbuettel  <edd@debian.org>
 
 	* inst/include/date.h: Sync with upstream release 3.0.4
 	* inst/include/ptx.h: Idem
+
+	* inst/include/date.h: As before, comment-out one 'stringop-overflow'
+	pragma r-devel complains about
 
 2025-03-17  Dirk Eddelbuettel  <edd@debian.org>
 
