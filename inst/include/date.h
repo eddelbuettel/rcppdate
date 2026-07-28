@@ -84,6 +84,12 @@
 #   pragma warning(disable : 4127)
 #endif
 
+#if (defined(__GNUC__) && __GNUC__ < 5) && !defined(__clang__) && !defined(_MSC_VER)
+#  define OPERATOR_LITERAL(suffix) operator"" _##suffix
+#else
+#  define OPERATOR_LITERAL(suffix) operator""_##suffix
+#endif
+
 namespace date
 {
 
@@ -963,8 +969,8 @@ operator<<(std::basic_ostream<CharT, Traits>& os, const year_month_weekday_last&
 inline namespace literals
 {
 
-CONSTCD11 date::day  operator ""_d(unsigned long long d) NOEXCEPT;
-CONSTCD11 date::year operator ""_y(unsigned long long y) NOEXCEPT;
+CONSTCD11 date::day  OPERATOR_LITERAL(d)(unsigned long long d) NOEXCEPT;
+CONSTCD11 date::year OPERATOR_LITERAL(y)(unsigned long long y) NOEXCEPT;
 
 }  // inline namespace literals
 #endif // !defined(_MSC_VER) || (_MSC_VER >= 1900)
@@ -1972,7 +1978,7 @@ inline namespace literals
 CONSTCD11
 inline
 date::day
-operator ""_d(unsigned long long d) NOEXCEPT
+OPERATOR_LITERAL(d)(unsigned long long d) NOEXCEPT
 {
     return date::day{static_cast<unsigned>(d)};
 }
@@ -1980,7 +1986,7 @@ operator ""_d(unsigned long long d) NOEXCEPT
 CONSTCD11
 inline
 date::year
-operator ""_y(unsigned long long y) NOEXCEPT
+OPERATOR_LITERAL(y)(unsigned long long y) NOEXCEPT
 {
     return date::year(static_cast<int>(y));
 }
@@ -7181,6 +7187,7 @@ from_stream(std::basic_istream<CharT, Traits>& is, const CharT* fmt,
                         int tp = not_a_ampm;
 #if !ONLY_C_LOCALE
                         tm = std::tm{};
+                        tm.tm_isdst = -1;
                         tm.tm_hour = 1;
                         ios::iostate err = ios::goodbit;
                         f.get(is, nullptr, is, err, &tm, command, fmt+1);
@@ -8030,15 +8037,25 @@ from_stream(std::basic_istream<CharT, Traits>& is, const CharT* fmt,
 {
     using CT = typename std::common_type<Duration, std::chrono::seconds>::type;
     using detail::round_i;
-    std::chrono::minutes offset_local{};
-    auto offptr = offset ? offset : &offset_local;
+    std::chrono::minutes offset_local = std::chrono::minutes::min();
     fields<CT> fds{};
     fds.has_tod = true;
-    date::from_stream(is, fmt, fds, abbrev, offptr);
+    date::from_stream(is, fmt, fds, abbrev, &offset_local);
     if (!fds.ymd.ok() || !fds.tod.in_conventional_range())
         is.setstate(std::ios::failbit);
     if (!is.fail())
-        tp = round_i<Duration>(sys_days(fds.ymd) - *offptr + fds.tod.to_duration());
+    {
+        if (offset_local != std::chrono::minutes::min())
+        {
+            tp = round_i<Duration>(sys_days(fds.ymd) + fds.tod.to_duration() - offset_local);
+            if (offset != nullptr)
+                *offset = offset_local;
+        }
+        else
+        {
+            tp = round_i<Duration>(sys_days(fds.ymd) + fds.tod.to_duration());
+        }
+    }
     return is;
 }
 

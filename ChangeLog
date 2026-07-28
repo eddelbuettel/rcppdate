@@ -1,3 +1,13 @@
+2026-07-27  Dirk Eddelbuettel  <edd@debian.org>
+
+	* inst/include/date.h: Sync with upstream release 3.0.5
+	* inst/include/tz.h: Idem
+	* inst/include/ptz.h: Idem
+	* inst/include/iso_week.h: Idem
+
+	* inst/include/date.h: As before, comment-out one 'stringop-overflow'
+	pragma R complains about
+
 2026-01-14  Dirk Eddelbuettel  <edd@debian.org>
 
 	* .github/workflows/ci.yaml: Switch to actions/checkout@v6
@@ -9,7 +19,7 @@
 2025-05-28  Dirk Eddelbuettel  <edd@debian.org>
 
 	* inst/include/date.h: Sync with upstream release 3.0.4
-	* inst/include/ptx.h: Idem
+	* inst/include/ptz.h: Idem
 
 	* inst/include/date.h: As before, comment-out one 'stringop-overflow'
 	pragma r-devel complains about

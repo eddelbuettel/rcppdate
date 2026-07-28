@@ -1014,7 +1014,8 @@ public:
     DATE_API explicit leap_second(const std::string& s, detail::undocumented);
 #endif
 
-    sys_seconds date() const {return date_;}
+    constexpr sys_seconds date() const noexcept {return date_;}
+    constexpr std::chrono::seconds value() const noexcept {return std::chrono::seconds{1};}
 
     friend bool operator==(const leap_second& x, const leap_second& y) {return x.date_ == y.date_;}
     friend bool operator< (const leap_second& x, const leap_second& y) {return x.date_ < y.date_;}
